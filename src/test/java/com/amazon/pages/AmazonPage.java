@@ -1,6 +1,7 @@
 package com.amazon.pages;
 
 
+import com.amazon.utilities.BrowserUtils;
 import com.amazon.utilities.Driver;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -11,12 +12,13 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 
-public class AmazonPage {
+public class AmazonPage extends BrowserUtils {
 
 
     public AmazonPage() {
         PageFactory.initElements(Driver.getDriver(), this);
     }
+
 
     @FindBy(id = "nav-link-accountList")
     public WebElement accountNavigation;
@@ -25,15 +27,10 @@ public class AmazonPage {
     public WebElement signInButtonInNavigation;
 
     public void clickToReachLogInPage() {
-        Actions actions = new Actions(Driver.getDriver());
-        try {
-            actions.moveToElement(accountNavigation).perform();
-            WebDriverWait wait = new WebDriverWait(Driver.getDriver(), 30);
-            wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//a[@id='nav-link-accountList']")));
-            actions.click(signInButtonInNavigation).perform();
-        } catch (Exception e) {
-            System.out.println(e.toString());
-        }
+        hover(accountNavigation);
+        waitUntilPresenceOfElement("//a[@id='nav-link-accountList']", 30);
+        hoverThenClick(signInButtonInNavigation);
+
     }
 
     @FindBy(id = "ap_email")

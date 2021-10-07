@@ -11,7 +11,7 @@
         "steps": [
           {
             "result": {
-              "duration": 11163000000,
+              "duration": 12098000000,
               "status": "passed"
             },
             "line": 6,
@@ -24,7 +24,7 @@
         ]
       },
       {
-        "start_timestamp": "2021-10-07T21:52:58.556Z",
+        "start_timestamp": "2021-10-07T22:33:12.121Z",
         "line": 8,
         "name": "Amazon default title verification",
         "description": "",
@@ -34,7 +34,7 @@
         "steps": [
           {
             "result": {
-              "duration": 2047000000,
+              "duration": 62000000,
               "status": "passed"
             },
             "line": 10,
@@ -60,7 +60,7 @@
         "steps": [
           {
             "result": {
-              "duration": 5191000000,
+              "duration": 4282000000,
               "status": "passed"
             },
             "line": 6,
@@ -73,7 +73,7 @@
         ]
       },
       {
-        "start_timestamp": "2021-10-07T21:53:11.946Z",
+        "start_timestamp": "2021-10-07T22:33:24.455Z",
         "line": 12,
         "name": "Login with given credentials",
         "description": "",
@@ -83,21 +83,20 @@
         "steps": [
           {
             "result": {
-              "error_message": "java.lang.NullPointerException\n\tat com.amazon.step_definitions.AmazonStepDef.user_clicks_account_navigation_link(AmazonStepDef.java:32)\n\tat ✽.User clicks account navigation link(file:///Users/myalcan/IdeaProjects/interview-technical-assignment/src/test/resources/features/amazon.feature:14)\n",
-              "duration": 4000000,
-              "status": "failed"
+              "duration": 3297000000,
+              "status": "passed"
             },
             "line": 14,
-            "name": "User clicks account navigation link",
+            "name": "User hover over navigation link and click sign in button",
             "match": {
-              "location": "com.amazon.step_definitions.AmazonStepDef.user_clicks_account_navigation_link()"
+              "location": "com.amazon.step_definitions.AmazonStepDef.user_hover_over_navigation_link_and_click_sign_in_button()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 1000000,
-              "status": "skipped"
+              "duration": 259000000,
+              "status": "passed"
             },
             "line": 15,
             "name": "User enters email address",
@@ -108,7 +107,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 656000000,
+              "status": "passed"
             },
             "line": 16,
             "name": "User clicks continue button",
@@ -119,7 +119,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 128000000,
+              "status": "passed"
             },
             "line": 17,
             "name": "User enters password",
@@ -130,8 +131,8 @@
           },
           {
             "result": {
-              "duration": 1000000,
-              "status": "skipped"
+              "duration": 99000000,
+              "status": "passed"
             },
             "line": 18,
             "name": "User clicks sign-in button",
@@ -142,7 +143,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 2821000000,
+              "status": "passed"
             },
             "line": 19,
             "name": "The url should contain navigation sign in parameter",

@@ -6,12 +6,13 @@ import com.amazon.utilities.Driver;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import io.cucumber.java.tr.Ama;
 import org.junit.Assert;
 
 
 public class AmazonStepDef {
 
-    AmazonPage amazonPage;
+    AmazonPage amazonPage = new AmazonPage();
 
     @Given("User is on homepage")
     public void user_is_on_homepage() {
@@ -26,8 +27,8 @@ public class AmazonStepDef {
     }
 
 
-    @When("User clicks account navigation link")
-    public void user_clicks_account_navigation_link() {
+    @When("User hover over navigation link and click sign in button")
+    public void user_hover_over_navigation_link_and_click_sign_in_button() {
         amazonPage.clickToReachLogInPage();
     }
 
@@ -49,7 +50,7 @@ public class AmazonStepDef {
     }
     @Then("The url should contain navigation sign in parameter")
     public void the_url_should_contain_navigation_sign_in_parameter() {
-        String expectedInUrl = "_encoding=UTF8&ref_=nav_ya_signin&";
+        String expectedInUrl = "?ref_=nav_signin&";
         String actualUrl = Driver.getDriver().getCurrentUrl();
         Assert.assertTrue(actualUrl.contains(expectedInUrl));
     }
