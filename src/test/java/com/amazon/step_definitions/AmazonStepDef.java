@@ -1,7 +1,6 @@
 package com.amazon.step_definitions;
 
 import com.amazon.pages.AmazonPage;
-import com.amazon.utilities.BrowserUtils;
 import com.amazon.utilities.ConfigurationReader;
 import com.amazon.utilities.Driver;
 import io.cucumber.java.en.Given;

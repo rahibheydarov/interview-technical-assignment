@@ -1,17 +1,15 @@
 package com.amazon.pages;
 
-import com.amazon.utilities.BrowserUtils;
-import com.amazon.utilities.ConfigurationReader;
+
 import com.amazon.utilities.Driver;
-import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+
 
 public class AmazonPage {
 
@@ -36,7 +34,6 @@ public class AmazonPage {
         } catch (Exception e) {
             System.out.println(e.toString());
         }
-
     }
 
     @FindBy(id = "ap_email")

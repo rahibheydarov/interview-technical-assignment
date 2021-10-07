@@ -11,7 +11,7 @@
         "steps": [
           {
             "result": {
-              "duration": 11579000000,
+              "duration": 11163000000,
               "status": "passed"
             },
             "line": 6,
@@ -24,7 +24,7 @@
         ]
       },
       {
-        "start_timestamp": "2021-10-07T21:09:55.744Z",
+        "start_timestamp": "2021-10-07T21:52:58.556Z",
         "line": 8,
         "name": "Amazon default title verification",
         "description": "",
@@ -34,7 +34,7 @@
         "steps": [
           {
             "result": {
-              "duration": 201000000,
+              "duration": 2047000000,
               "status": "passed"
             },
             "line": 10,
@@ -60,7 +60,7 @@
         "steps": [
           {
             "result": {
-              "duration": 6114000000,
+              "duration": 5191000000,
               "status": "passed"
             },
             "line": 6,
@@ -73,7 +73,7 @@
         ]
       },
       {
-        "start_timestamp": "2021-10-07T21:10:07.719Z",
+        "start_timestamp": "2021-10-07T21:53:11.946Z",
         "line": 12,
         "name": "Login with given credentials",
         "description": "",
@@ -84,7 +84,7 @@
           {
             "result": {
               "error_message": "java.lang.NullPointerException\n\tat com.amazon.step_definitions.AmazonStepDef.user_clicks_account_navigation_link(AmazonStepDef.java:32)\n\tat ✽.User clicks account navigation link(file:///Users/myalcan/IdeaProjects/interview-technical-assignment/src/test/resources/features/amazon.feature:14)\n",
-              "duration": 6000000,
+              "duration": 4000000,
               "status": "failed"
             },
             "line": 14,
@@ -96,6 +96,7 @@
           },
           {
             "result": {
+              "duration": 1000000,
               "status": "skipped"
             },
             "line": 15,
@@ -107,7 +108,6 @@
           },
           {
             "result": {
-              "duration": 1000000,
               "status": "skipped"
             },
             "line": 16,
@@ -119,7 +119,6 @@
           },
           {
             "result": {
-              "duration": 1000000,
               "status": "skipped"
             },
             "line": 17,
@@ -131,7 +130,7 @@
           },
           {
             "result": {
-              "duration": 2000000,
+              "duration": 1000000,
               "status": "skipped"
             },
             "line": 18,
@@ -143,7 +142,6 @@
           },
           {
             "result": {
-              "duration": 1000000,
               "status": "skipped"
             },
             "line": 19,
