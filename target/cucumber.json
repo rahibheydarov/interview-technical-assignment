@@ -11,7 +11,7 @@
         "steps": [
           {
             "result": {
-              "duration": 10903000000,
+              "duration": 11579000000,
               "status": "passed"
             },
             "line": 6,
@@ -24,7 +24,7 @@
         ]
       },
       {
-        "start_timestamp": "2021-10-07T20:43:37.136Z",
+        "start_timestamp": "2021-10-07T21:09:55.744Z",
         "line": 8,
         "name": "Amazon default title verification",
         "description": "",
@@ -34,7 +34,7 @@
         "steps": [
           {
             "result": {
-              "duration": 63000000,
+              "duration": 201000000,
               "status": "passed"
             },
             "line": 10,
@@ -60,7 +60,7 @@
         "steps": [
           {
             "result": {
-              "duration": 4815000000,
+              "duration": 6114000000,
               "status": "passed"
             },
             "line": 6,
@@ -73,7 +73,7 @@
         ]
       },
       {
-        "start_timestamp": "2021-10-07T20:43:48.367Z",
+        "start_timestamp": "2021-10-07T21:10:07.719Z",
         "line": 12,
         "name": "Login with given credentials",
         "description": "",
@@ -84,7 +84,7 @@
           {
             "result": {
               "error_message": "java.lang.NullPointerException\n\tat com.amazon.step_definitions.AmazonStepDef.user_clicks_account_navigation_link(AmazonStepDef.java:32)\n\tat ✽.User clicks account navigation link(file:///Users/myalcan/IdeaProjects/interview-technical-assignment/src/test/resources/features/amazon.feature:14)\n",
-              "duration": 5000000,
+              "duration": 6000000,
               "status": "failed"
             },
             "line": 14,
@@ -143,6 +143,7 @@
           },
           {
             "result": {
+              "duration": 1000000,
               "status": "skipped"
             },
             "line": 19,

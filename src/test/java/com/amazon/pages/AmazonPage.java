@@ -20,21 +20,21 @@ public class AmazonPage {
         PageFactory.initElements(Driver.getDriver(), this);
     }
 
-    @FindBy(xpath = "//div[@class='nav-signin-tt nav-flyout']")
-    public WebElement signInNavFlyout;
+    @FindBy(id = "nav-link-accountList")
+    public WebElement accountNavigation;
 
-    @FindBy(xpath = "//div[@id='nav-al-signin']//a[@class='nav-action-button']")
+    @FindBy(xpath = "//a[@data-nav-ref='nav_signin']/span")
     public WebElement signInButtonInNavigation;
 
     public void clickToReachLogInPage() {
         Actions actions = new Actions(Driver.getDriver());
         try {
+            actions.moveToElement(accountNavigation).perform();
             WebDriverWait wait = new WebDriverWait(Driver.getDriver(), 30);
-            wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@class='nav-signin-tt nav-flyout']")));
-            actions.moveToElement(signInNavFlyout).perform();
+            wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//a[@id='nav-link-accountList']")));
             actions.click(signInButtonInNavigation).perform();
         } catch (Exception e) {
-            System.out.println(e.getCause());
+            System.out.println(e.toString());
         }
 
     }
