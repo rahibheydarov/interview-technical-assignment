@@ -1,0 +1,178 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 5,
+        "name": "Assuming user is on homepage",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 12395000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User is on homepage",
+            "match": {
+              "location": "com.amazon.step_definitions.AmazonStepDef.user_is_on_homepage()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-10-07T20:21:36.530Z",
+        "line": 8,
+        "name": "Amazon default title verification",
+        "description": "",
+        "id": "amazon-title-verification-and-log-in-feature;amazon-default-title-verification",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1467000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User should see Amazon page title as expected",
+            "match": {
+              "location": "com.amazon.step_definitions.AmazonStepDef.user_should_see_amazon_page_title_as_expected()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@test1"
+          }
+        ]
+      },
+      {
+        "line": 5,
+        "name": "Assuming user is on homepage",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 5346000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User is on homepage",
+            "match": {
+              "location": "com.amazon.step_definitions.AmazonStepDef.user_is_on_homepage()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-10-07T20:21:50.590Z",
+        "line": 12,
+        "name": "Login with given credentials",
+        "description": "",
+        "id": "amazon-title-verification-and-log-in-feature;login-with-given-credentials",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "error_message": "java.lang.NullPointerException\n\tat com.amazon.step_definitions.AmazonStepDef.user_clicks_account_navigation_link(AmazonStepDef.java:32)\n\tat ✽.User clicks account navigation link(file:///Users/myalcan/IdeaProjects/interview-technical-assignment/src/test/resources/features/amazon.feature:14)\n",
+              "duration": 5000000,
+              "status": "failed"
+            },
+            "line": 14,
+            "name": "User clicks account navigation link",
+            "match": {
+              "location": "com.amazon.step_definitions.AmazonStepDef.user_clicks_account_navigation_link()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 15,
+            "name": "User enters email address",
+            "match": {
+              "location": "com.amazon.step_definitions.AmazonStepDef.user_enters_email_address()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 16,
+            "name": "User clicks continue button",
+            "match": {
+              "location": "com.amazon.step_definitions.AmazonStepDef.user_clicks_continue_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 17,
+            "name": "User enters password",
+            "match": {
+              "location": "com.amazon.step_definitions.AmazonStepDef.user_enters_password()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 7000000,
+              "status": "skipped"
+            },
+            "line": 18,
+            "name": "User clicks sign-in button",
+            "match": {
+              "location": "com.amazon.step_definitions.AmazonStepDef.user_clicks_sign_in_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 19,
+            "name": "The url should contain navigation sign in parameter",
+            "match": {
+              "location": "com.amazon.step_definitions.AmazonStepDef.the_url_should_contain_navigation_sign_in_parameter()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@test1"
+          }
+        ]
+      }
+    ],
+    "name": "Amazon title verification and log in feature",
+    "description": "  User Story: As a user, I should be able to verify the page title and login with correct credentials.",
+    "id": "amazon-title-verification-and-log-in-feature",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/amazon.feature",
+    "tags": [
+      {
+        "name": "@test1",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
