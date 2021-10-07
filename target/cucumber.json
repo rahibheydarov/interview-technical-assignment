@@ -11,7 +11,7 @@
         "steps": [
           {
             "result": {
-              "duration": 12395000000,
+              "duration": 10903000000,
               "status": "passed"
             },
             "line": 6,
@@ -24,7 +24,7 @@
         ]
       },
       {
-        "start_timestamp": "2021-10-07T20:21:36.530Z",
+        "start_timestamp": "2021-10-07T20:43:37.136Z",
         "line": 8,
         "name": "Amazon default title verification",
         "description": "",
@@ -34,7 +34,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1467000000,
+              "duration": 63000000,
               "status": "passed"
             },
             "line": 10,
@@ -60,7 +60,7 @@
         "steps": [
           {
             "result": {
-              "duration": 5346000000,
+              "duration": 4815000000,
               "status": "passed"
             },
             "line": 6,
@@ -73,7 +73,7 @@
         ]
       },
       {
-        "start_timestamp": "2021-10-07T20:21:50.590Z",
+        "start_timestamp": "2021-10-07T20:43:48.367Z",
         "line": 12,
         "name": "Login with given credentials",
         "description": "",
@@ -107,6 +107,7 @@
           },
           {
             "result": {
+              "duration": 1000000,
               "status": "skipped"
             },
             "line": 16,
@@ -130,7 +131,7 @@
           },
           {
             "result": {
-              "duration": 7000000,
+              "duration": 2000000,
               "status": "skipped"
             },
             "line": 18,

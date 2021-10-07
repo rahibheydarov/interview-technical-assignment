@@ -34,28 +34,25 @@ public class AmazonStepDef {
 
     @When("User enters email address")
     public void user_enters_email_address() {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
+        amazonPage.emailBox.sendKeys(ConfigurationReader.getProperty("amazonEmail"));
     }
     @When("User clicks continue button")
     public void user_clicks_continue_button() {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
+        amazonPage.continueButton.click();
     }
     @When("User enters password")
     public void user_enters_password() {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
+        amazonPage.passwordBox.sendKeys(ConfigurationReader.getProperty("amazonPassword"));
     }
     @When("User clicks sign-in button")
     public void user_clicks_sign_in_button() {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
+        amazonPage.signInButton.click();
     }
     @Then("The url should contain navigation sign in parameter")
     public void the_url_should_contain_navigation_sign_in_parameter() {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
+        String expectedInUrl = "_encoding=UTF8&ref_=nav_ya_signin&";
+        String actualUrl = Driver.getDriver().getCurrentUrl();
+        Assert.assertTrue(actualUrl.contains(expectedInUrl));
     }
 
 

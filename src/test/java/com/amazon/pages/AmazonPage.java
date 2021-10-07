@@ -29,13 +29,12 @@ public class AmazonPage {
     public void clickToReachLogInPage() {
         Actions actions = new Actions(Driver.getDriver());
         try {
-            JavascriptExecutor js = (JavascriptExecutor)Driver.getDriver();
-            js.executeScript("arguments[0].scrollIntoView(true);", signInNavFlyout);
+            WebDriverWait wait = new WebDriverWait(Driver.getDriver(), 30);
+            wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@class='nav-signin-tt nav-flyout']")));
             actions.moveToElement(signInNavFlyout).perform();
             actions.click(signInButtonInNavigation).perform();
         } catch (Exception e) {
-
-            throw new NullPointerException();
+            System.out.println(e.getCause());
         }
 
     }
