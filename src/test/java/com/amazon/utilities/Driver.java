@@ -2,6 +2,7 @@ package com.amazon.utilities;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebDriverException;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.safari.SafariDriver;
@@ -49,22 +50,27 @@ public class Driver {
                         WebDriverManager.firefoxdriver().setup();
                         driverPool.set(new FirefoxDriver());
                         driverPool.get().manage().window().maximize();
-                        driverPool.get().manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+                        driverPool.get().manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
                         break;
                     case "safari":
                         WebDriverManager.getInstance(SafariDriver.class).setup();
                         driverPool.set(new SafariDriver());
                         driverPool.get().manage().window().maximize();
                         driverPool.get().manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+                        break;
                 }
             }
         }
-
 
         //Same driver instance will be returned every time while calling Driver.getDriver(); method
         return driverPool.get();
 
 
+    }
+
+    public static void closeDriver() {
+        driverPool.get().quit();
+        driverPool.remove();
     }
 
 }
