@@ -11,7 +11,7 @@
         "steps": [
           {
             "result": {
-              "duration": 8183000000,
+              "duration": 8296000000,
               "status": "passed"
             },
             "line": 6,
@@ -24,7 +24,7 @@
         ]
       },
       {
-        "start_timestamp": "2021-10-08T01:06:45.603Z",
+        "start_timestamp": "2021-10-08T01:49:50.801Z",
         "line": 8,
         "name": "Amazon default title verification",
         "description": "",
@@ -34,7 +34,7 @@
         "steps": [
           {
             "result": {
-              "duration": 21000000,
+              "duration": 30000000,
               "status": "passed"
             },
             "line": 10,
@@ -60,7 +60,7 @@
         "steps": [
           {
             "result": {
-              "duration": 2631000000,
+              "duration": 1351000000,
               "status": "passed"
             },
             "line": 6,
@@ -73,7 +73,7 @@
         ]
       },
       {
-        "start_timestamp": "2021-10-08T01:06:54.026Z",
+        "start_timestamp": "2021-10-08T01:49:59.308Z",
         "line": 12,
         "name": "Login with given credentials",
         "description": "",
@@ -83,8 +83,9 @@
         "steps": [
           {
             "result": {
-              "duration": 704000000,
-              "status": "passed"
+              "error_message": "org.openqa.selenium.WebDriverException: TypeError: rect is undefined\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027Rakunca-MacBook-Air.local\u0027, ip: \u00272601:246:4503:4800:50cd:d89a:d1ef:e3d7%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002710.16\u0027, java.version: \u00271.8.0_231\u0027\nDriver info: org.openqa.selenium.firefox.FirefoxDriver\nCapabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 93.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210927210923, moz:geckodriverVersion: 0.30.0, moz:headless: false, moz:processID: 1958, moz:profile: /var/folders/fg/08yy56m93x1..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 20.3.0, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}\nSession ID: f23ad858-b93e-f04a-a9da-bc4da976e55a\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:618)\n\tat org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:639)\n\tat org.openqa.selenium.interactions.Actions.perform(Actions.java:595)\n\tat com.amazon.utilities.BrowserUtils.hoverThenClick(BrowserUtils.java:18)\n\tat com.amazon.pages.AmazonPage.clickToReachLogInPage(AmazonPage.java:26)\n\tat com.amazon.step_definitions.AmazonStepDef.user_hover_over_navigation_link_and_click_sign_in_button(AmazonStepDef.java:33)\n\tat ✽.User hover over navigation link and click sign in button(file:///Users/myalcan/IdeaProjects/interview-technical-assignment/src/test/resources/features/amazon.feature:14)\n",
+              "duration": 1636000000,
+              "status": "failed"
             },
             "line": 14,
             "name": "User hover over navigation link and click sign in button",
@@ -95,9 +96,8 @@
           },
           {
             "result": {
-              "error_message": "org.openqa.selenium.NoSuchFrameException: \nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027Rakunca-MacBook-Air.local\u0027, ip: \u00272601:246:4503:4800:50cd:d89a:d1ef:e3d7%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002710.16\u0027, java.version: \u00271.8.0_231\u0027\nDriver info: org.openqa.selenium.safari.SafariDriver\nCapabilities {acceptInsecureCerts: false, browserName: Safari, browserVersion: 14.0.3, javascriptEnabled: true, platform: MAC, platformName: MAC, safari:automaticInspection: false, safari:automaticProfiling: false, safari:diagnose: false, safari:platformBuildVersion: 20D91, safari:platformVersion: 11.2.3, safari:useSimulator: false, setWindowRect: true, strictFileInteractability: false, webkit:WebRTC: {DisableICECandidateFiltering: false, DisableInsecureMediaCapture: false}}\nSession ID: F7791805-147F-4B63-83BF-827C2E73F120\n*** Element info: {Using\u003did, value\u003dap_email}\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)\n\tat org.openqa.selenium.By$ById.findElement(By.java:188)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\n\tat com.sun.proxy.$Proxy15.sendKeys(Unknown Source)\n\tat com.amazon.step_definitions.AmazonStepDef.user_enters_email_address(AmazonStepDef.java:38)\n\tat ✽.User enters email address(file:///Users/myalcan/IdeaProjects/interview-technical-assignment/src/test/resources/features/amazon.feature:15)\n",
-              "duration": 513000000,
-              "status": "failed"
+              "duration": 1000000,
+              "status": "skipped"
             },
             "line": 15,
             "name": "User enters email address",
@@ -119,7 +119,6 @@
           },
           {
             "result": {
-              "duration": 1000000,
               "status": "skipped"
             },
             "line": 17,
@@ -131,7 +130,7 @@
           },
           {
             "result": {
-              "duration": 2000000,
+              "duration": 1000000,
               "status": "skipped"
             },
             "line": 18,
